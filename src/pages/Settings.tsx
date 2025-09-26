@@ -37,7 +37,7 @@ const Settings = () => {
       id: 'free',
       name: 'Free',
       price: '€0',
-      period: 'forever',
+      period: 'for only first month',
       bills: '5 bills/month',
       features: ['Basic bill tracking', 'Email notifications', 'Standard support'],
       icon: User,

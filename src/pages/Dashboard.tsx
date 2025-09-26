@@ -81,7 +81,7 @@ const Dashboard = () => {
                   <Button variant="secondary" size="sm" className="text-primary">
                     Withdraw Money
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button variant="secondary" size="sm" className="text-primary">
                     Top Up
                   </Button>
                 </div>
