@@ -16,7 +16,8 @@ import {
   Settings, 
   LogOut,
   CreditCard,
-  User
+  User,
+  MessageCircle
 } from 'lucide-react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
@@ -38,6 +39,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     { name: 'Bills', href: '/bills', icon: FileText },
     { name: 'Analytics', href: '/analytics', icon: BarChart3 },
     { name: 'Settings', href: '/settings', icon: Settings },
+    { name: 'Support', href: '/support', icon: MessageCircle },
   ];
 
   return (

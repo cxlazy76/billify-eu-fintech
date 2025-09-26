@@ -10,7 +10,9 @@ import Dashboard from "./pages/Dashboard";
 import Bills from "./pages/Bills";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
+import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
+import { SupportWidget } from "@/components/SupportWidget";
 
 const queryClient = new QueryClient();
 
@@ -28,9 +30,11 @@ const App = () => (
               <Route path="/bills" element={<Bills />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/support" element={<Support />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <SupportWidget />
           </AppStateProvider>
         </AuthProvider>
       </BrowserRouter>

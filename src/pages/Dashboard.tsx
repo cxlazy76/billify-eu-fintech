@@ -77,9 +77,14 @@ const Dashboard = () => {
             <CardContent>
               <div className="space-y-3">
                 <div className="text-3xl font-bold">€{walletBalance.toFixed(2)}</div>
-                <Button variant="secondary" size="sm" className="text-primary">
-                  Withdraw Money
-                </Button>
+                <div className="flex space-x-2">
+                  <Button variant="secondary" size="sm" className="text-primary">
+                    Withdraw Money
+                  </Button>
+                  <Button variant="outline" size="sm">
+                    Top Up
+                  </Button>
+                </div>
               </div>
             </CardContent>
           </Card>
